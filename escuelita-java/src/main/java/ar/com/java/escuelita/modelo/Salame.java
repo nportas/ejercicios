@@ -1,8 +1,6 @@
 package ar.com.java.escuelita.modelo;
 
-public class Salame implements Ingrediente {
-	
-	private Double precio;
+public class Salame extends Alimento implements Ingrediente {
 	
 	public Salame(Double precio) {
 		this.precio = precio;

@@ -1,6 +1,6 @@
 package ar.com.java.escuelita.modelo;
 
-public class Milanesa implements Ingrediente {
+public class Milanesa extends Alimento implements Ingrediente {
 	
 	private Double precio;
 

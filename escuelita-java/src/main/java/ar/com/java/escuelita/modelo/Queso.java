@@ -1,9 +1,7 @@
 package ar.com.java.escuelita.modelo;
 
-public class Queso implements Ingrediente, Agregado {
+public class Queso extends Alimento implements Ingrediente, Agregado {
 
-	private Double precio;
-	
 	public Queso(Double precio) {
 		this.precio = precio;
 	}
