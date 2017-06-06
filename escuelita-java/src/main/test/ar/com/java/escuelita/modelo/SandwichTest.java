@@ -15,8 +15,7 @@ import static org.hamcrest.Matchers.*;
 	sándwich. Además el sandwich tiene un precio base al cual se le suma el costo de los agregados y los
 	ingredientes.
 	El sandwich puede calcular su precio en cualquier momento.
-	Hacer el diagrama de clases y codificar el ejemplo, haciendo tests que comprueben el correcto
-	funcionamiento del sandwich.
+	Implementar el ejemplo, haciendo que funcionen correctamente los siguientes tests.
  *	
  * @author nportas
  *
