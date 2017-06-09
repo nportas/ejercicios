@@ -14,18 +14,25 @@ public class Sandwich {
 		this.precioBase = precioBase;
 	}
 
-	public Double calcularPrecio() {
+	public Double calcularPrecio() throws Exception {
 		
 		Double precio = 0.0;
 		
-		for (Ingrediente ingrediente : ingredientes) {
+		if(ingredientes.size() > 0) {
 			
-			precio = precio + ingrediente.calcularPrecioComoIngrediente(); 
-		}
-		
-		for (Agregado agregado : agregados) {
+			for (Ingrediente ingrediente : ingredientes) {
+				
+				precio = precio + ingrediente.calcularPrecioComoIngrediente(); 
+			}
 			
-			precio = precio + agregado.calcularPrecioComoAgregado();
+			for (Agregado agregado : agregados) {
+				
+				precio = precio + agregado.calcularPrecioComoAgregado();
+			}
+			
+		} else {
+			
+			throw new Exception("El sandwich debe contener al menos un ingrediente");
 		}
 		
 		return precioBase + precio;

@@ -24,7 +24,7 @@ import static org.hamcrest.Matchers.*;
 public class SandwichTest {
 	
 	@Test
-	public void comprobarPrecioDeSandwichConTresIngredientesYDosAgregados() {
+	public void comprobarPrecioDeSandwichConTresIngredientesYDosAgregados() throws Exception {
 		
 		/* Inicialización */
 		Sandwich sandwich = new Sandwich(20.0);
@@ -51,7 +51,7 @@ public class SandwichTest {
 	}
 	
 	@Test
-	public void comprobarPrecioDeSandwichConSoloUnIngrediente() {
+	public void comprobarPrecioDeSandwichConSoloUnIngrediente() throws Exception {
 		
 		/* Inicialización */
 		Sandwich sandwich = new Sandwich(20.0);
@@ -68,7 +68,7 @@ public class SandwichTest {
 	}
 	
 	@Test
-	public void comprobarPrecioDeSandwichConDosIngredientesYUnAgregadoQueEsIngrediente() {
+	public void comprobarPrecioDeSandwichConDosIngredientesYUnAgregadoQueEsIngrediente() throws Exception {
 		
 		/* Inicialización */
 		Sandwich sandwich = new Sandwich(20.0);
@@ -88,6 +88,20 @@ public class SandwichTest {
 		
 		/* Comprobación */
 		assertThat(precioSandwich, is(equalTo(75.0)));
+	}
+	
+	@Test(expected = Exception.class)
+	public void comprobarQueFallaCuandoNoTieneAlMenosUnIngrediente() throws Exception {
+		
+		/* Inicialización */
+		Sandwich sandwich = new Sandwich(20.0);
+		
+		Queso quesoComoAgregado = new Queso(10.0);
+		
+		sandwich.agregarAgregado(quesoComoAgregado);
+		
+		/* Operación */
+		sandwich.calcularPrecio();
 	}
 
 }
