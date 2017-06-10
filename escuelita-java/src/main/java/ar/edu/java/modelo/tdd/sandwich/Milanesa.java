@@ -1,4 +1,4 @@
-package ar.com.java.escuelita.modelo;
+package ar.edu.java.modelo.tdd.sandwich;
 
 public class Milanesa extends Alimento implements Ingrediente {
 	

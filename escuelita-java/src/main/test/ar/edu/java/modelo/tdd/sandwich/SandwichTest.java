@@ -1,6 +1,14 @@
-package ar.com.java.escuelita.modelo;
+package ar.edu.java.modelo.tdd.sandwich;
 
 import org.junit.Test;
+
+import ar.edu.java.modelo.tdd.sandwich.Lechuga;
+import ar.edu.java.modelo.tdd.sandwich.Milanesa;
+import ar.edu.java.modelo.tdd.sandwich.Queso;
+import ar.edu.java.modelo.tdd.sandwich.Salame;
+import ar.edu.java.modelo.tdd.sandwich.Sandwich;
+import ar.edu.java.modelo.tdd.sandwich.Tomate;
+
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
 

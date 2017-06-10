@@ -1,4 +1,4 @@
-package ar.com.java.escuelita.modelo;
+package ar.edu.java.modelo.tdd.factura;
 
 import org.junit.Test;
 
@@ -18,7 +18,6 @@ public class FacturaTest {
 	public void comprobarTotalConDiezLadrillosYDosKilosDeArena() {
 		
 	}
-	
 	
 	@Test
 	public void comprobarTotalConCincoKilosDeCementoYAlbanil() {
