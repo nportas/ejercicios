@@ -11,13 +11,13 @@ public class Division extends Operacion {
 	public double obtenerResultado() {
 		
 		if(operando2 == 0) {
-			throw new RuntimeException("El dividor no puede ser cero");
+			throw new RuntimeException("El divisor no puede ser cero");
 		}
 		
 		return operando1 / operando2;
 	}
 	
-	public double obtenerResto(double operando1, double operando2) {
+	public double obtenerResto() {
 		return operando1 % operando2;
 	}
 
